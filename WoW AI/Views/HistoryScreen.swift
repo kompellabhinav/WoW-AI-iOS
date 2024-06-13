@@ -15,7 +15,7 @@ struct HistoryScreen: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \QuestionEntity.date, ascending: true)],
         animation: .default)
     private var questions: FetchedResults<QuestionEntity>
-    @State var youtubeURL: String?
+    @State var videoURL: String?
     @State var isVideoPoppedUp = false
     @State var blurRadius: CGFloat = 0.0
     
@@ -59,7 +59,7 @@ struct HistoryScreen: View {
                             
                             ForEach(questions, id: \.self) { question in
                                 QuestionCard(question: question.question!, date: "\(question.date!)", url: question.url!, onTap: {
-                                    self.youtubeURL = question.url
+                                    self.videoURL = question.url
                                     self.blurRadius = 6
                                     self.isVideoPoppedUp = true
                                 })
@@ -73,7 +73,7 @@ struct HistoryScreen: View {
             }
             .blur(radius: blurRadius)
             if isVideoPoppedUp {
-                VideoPopUp(url: youtubeURL, isVideoPoppedUp: $isVideoPoppedUp, blurRadius: $blurRadius)
+                VideoPopUp(isVideoPoppedUp: $isVideoPoppedUp, blurRadius: $blurRadius, videoUrl: self.videoURL!)
             }
         }
     }
