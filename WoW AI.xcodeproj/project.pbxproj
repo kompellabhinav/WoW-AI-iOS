@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA033D912C08E93A0042DBD1 /* recordWaveform.json in Resources */ = {isa = PBXBuildFile; fileRef = EA033D902C08E93A0042DBD1 /* recordWaveform.json */; };
+		EA033D942C08EE500042DBD1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EA033D932C08EE500042DBD1 /* Alamofire */; };
+		EA0785522BE32D050025EC9C /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0785512BE32D050025EC9C /* HistoryScreen.swift */; };
+		EA0C5EB52BD4B362004DC1E7 /* XCAOpenAIClient in Frameworks */ = {isa = PBXBuildFile; productRef = EA0C5EB42BD4B362004DC1E7 /* XCAOpenAIClient */; };
+		EA0C5EB82BD4B375004DC1E7 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA0C5EB72BD4B375004DC1E7 /* YouTubePlayerKit */; };
+		EA0C5EBA2BD4B3A1004DC1E7 /* AIAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C5EB92BD4B3A1004DC1E7 /* AIAssistant.swift */; };
+		EA0C5EBD2BD4B3B0004DC1E7 /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = EA0C5EBC2BD4B3B0004DC1E7 /* SwiftOpenAI */; };
+		EA8046F82BDF00E100C4EDBE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EA8046F72BDF00E100C4EDBE /* Lottie */; };
+		EA8046FA2BDF018E00C4EDBE /* mainAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8046F92BDF018E00C4EDBE /* mainAnimation.json */; };
+		EA8046FC2BDF01A900C4EDBE /* MainAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8046FB2BDF01A900C4EDBE /* MainAnimation.swift */; };
+		EA8046FE2BDF55AD00C4EDBE /* loadingAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8046FD2BDF55AD00C4EDBE /* loadingAnimation.json */; };
+		EA82196A2BE43B420051B2FA /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA8219682BE43B420051B2FA /* Data.xcdatamodeld */; };
+		EA82196C2BE43C020051B2FA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82196B2BE43C020051B2FA /* Persistence.swift */; };
+		EA82196E2BE4523A0051B2FA /* VideoPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82196D2BE4523A0051B2FA /* VideoPopUp.swift */; };
+		EA899AB42C06969C0067A6DE /* PhoneNumberScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA899AB32C06969C0067A6DE /* PhoneNumberScreen.swift */; };
+		EA899AB62C06A2180067A6DE /* StorePhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA899AB52C06A2180067A6DE /* StorePhoneNumber.swift */; };
+		EA899ABD2C06C6810067A6DE /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA899ABC2C06C6810067A6DE /* SettingsScreen.swift */; };
+		EAA0B31C2C1A7D6600F602E9 /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = EAA0B31B2C1A7D6600F602E9 /* SwiftOpenAI */; };
+		EADA74842BD196C8005BDFD5 /* WoW_AIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADA74832BD196C8005BDFD5 /* WoW_AIApp.swift */; };
+		EADA74862BD196C8005BDFD5 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADA74852BD196C8005BDFD5 /* MainScreen.swift */; };
+		EADA74882BD196C8005BDFD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADA74872BD196C8005BDFD5 /* Assets.xcassets */; };
+		EADA748B2BD196C8005BDFD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADA748A2BD196C8005BDFD5 /* Preview Assets.xcassets */; };
+		EADA74922BD196F8005BDFD5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADA74912BD196F8005BDFD5 /* Models.swift */; };
+		EADA74942BD197B3005BDFD5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADA74932BD197B3005BDFD5 /* ViewModel.swift */; };
+		EADA74962BD19AA8005BDFD5 /* GIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADA74952BD19AA8005BDFD5 /* GIFView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA033D902C08E93A0042DBD1 /* recordWaveform.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recordWaveform.json; sourceTree = "<group>"; };
+		EA0785512BE32D050025EC9C /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
+		EA0C5EB92BD4B3A1004DC1E7 /* AIAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistant.swift; sourceTree = "<group>"; };
+		EA8046F92BDF018E00C4EDBE /* mainAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mainAnimation.json; sourceTree = "<group>"; };
+		EA8046FB2BDF01A900C4EDBE /* MainAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAnimation.swift; sourceTree = "<group>"; };
+		EA8046FD2BDF55AD00C4EDBE /* loadingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadingAnimation.json; sourceTree = "<group>"; };
+		EA8219692BE43B420051B2FA /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
+		EA82196B2BE43C020051B2FA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		EA82196D2BE4523A0051B2FA /* VideoPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPopUp.swift; sourceTree = "<group>"; };
+		EA899AB32C06969C0067A6DE /* PhoneNumberScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberScreen.swift; sourceTree = "<group>"; };
+		EA899AB52C06A2180067A6DE /* StorePhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorePhoneNumber.swift; sourceTree = "<group>"; };
+		EA899ABC2C06C6810067A6DE /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		EADA74802BD196C8005BDFD5 /* WoW AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WoW AI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EADA74832BD196C8005BDFD5 /* WoW_AIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoW_AIApp.swift; sourceTree = "<group>"; };
+		EADA74852BD196C8005BDFD5 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		EADA74872BD196C8005BDFD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EADA748A2BD196C8005BDFD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EADA74912BD196F8005BDFD5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EADA74932BD197B3005BDFD5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EADA74952BD19AA8005BDFD5 /* GIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EADA747D2BD196C8005BDFD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA033D942C08EE500042DBD1 /* Alamofire in Frameworks */,
+				EA0C5EB82BD4B375004DC1E7 /* YouTubePlayerKit in Frameworks */,
+				EA0C5EBD2BD4B3B0004DC1E7 /* SwiftOpenAI in Frameworks */,
+				EA0C5EB52BD4B362004DC1E7 /* XCAOpenAIClient in Frameworks */,
+				EAA0B31C2C1A7D6600F602E9 /* SwiftOpenAI in Frameworks */,
+				EA8046F82BDF00E100C4EDBE /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAA0B31D2C1A98DF00F602E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA82196D2BE4523A0051B2FA /* VideoPopUp.swift */,
+				EA8046FB2BDF01A900C4EDBE /* MainAnimation.swift */,
+				EADA74952BD19AA8005BDFD5 /* GIFView.swift */,
+				EADA74852BD196C8005BDFD5 /* MainScreen.swift */,
+				EA0785512BE32D050025EC9C /* HistoryScreen.swift */,
+				EA899ABC2C06C6810067A6DE /* SettingsScreen.swift */,
+				EA899AB32C06969C0067A6DE /* PhoneNumberScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EAA0B31E2C1A991100F602E9 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				EA033D902C08E93A0042DBD1 /* recordWaveform.json */,
+				EA8046F92BDF018E00C4EDBE /* mainAnimation.json */,
+				EA8046FD2BDF55AD00C4EDBE /* loadingAnimation.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		EAA0B31F2C1A993500F602E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EA82196B2BE43C020051B2FA /* Persistence.swift */,
+				EA8219682BE43B420051B2FA /* Data.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EAA0B3202C1A995A00F602E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA899AB52C06A2180067A6DE /* StorePhoneNumber.swift */,
+				EADA74912BD196F8005BDFD5 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EAA0B3212C1A996500F602E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EADA74932BD197B3005BDFD5 /* ViewModel.swift */,
+				EA0C5EB92BD4B3A1004DC1E7 /* AIAssistant.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EADA74772BD196C8005BDFD5 = {
+			isa = PBXGroup;
+			children = (
+				EADA74822BD196C8005BDFD5 /* WoW AI */,
+				EADA74812BD196C8005BDFD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EADA74812BD196C8005BDFD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EADA74802BD196C8005BDFD5 /* WoW AI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EADA74822BD196C8005BDFD5 /* WoW AI */ = {
+			isa = PBXGroup;
+			children = (
+				EAA0B3212C1A996500F602E9 /* Controller */,
+				EAA0B3202C1A995A00F602E9 /* Models */,
+				EAA0B31F2C1A993500F602E9 /* Data */,
+				EAA0B31E2C1A991100F602E9 /* Animations */,
+				EAA0B31D2C1A98DF00F602E9 /* Views */,
+				EADA74832BD196C8005BDFD5 /* WoW_AIApp.swift */,
+				EADA74872BD196C8005BDFD5 /* Assets.xcassets */,
+				EADA74892BD196C8005BDFD5 /* Preview Content */,
+			);
+			path = "WoW AI";
+			sourceTree = "<group>";
+		};
+		EADA74892BD196C8005BDFD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EADA748A2BD196C8005BDFD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EADA747F2BD196C8005BDFD5 /* WoW AI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EADA748E2BD196C8005BDFD5 /* Build configuration list for PBXNativeTarget "WoW AI" */;
+			buildPhases = (
+				EADA747C2BD196C8005BDFD5 /* Sources */,
+				EADA747D2BD196C8005BDFD5 /* Frameworks */,
+				EADA747E2BD196C8005BDFD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WoW AI";
+			packageProductDependencies = (
+				EA0C5EB42BD4B362004DC1E7 /* XCAOpenAIClient */,
+				EA0C5EB72BD4B375004DC1E7 /* YouTubePlayerKit */,
+				EA0C5EBC2BD4B3B0004DC1E7 /* SwiftOpenAI */,
+				EA8046F72BDF00E100C4EDBE /* Lottie */,
+				EA033D932C08EE500042DBD1 /* Alamofire */,
+				EAA0B31B2C1A7D6600F602E9 /* SwiftOpenAI */,
+			);
+			productName = "WoW AI";
+			productReference = EADA74802BD196C8005BDFD5 /* WoW AI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EADA74782BD196C8005BDFD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EADA747F2BD196C8005BDFD5 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = EADA747B2BD196C8005BDFD5 /* Build configuration list for PBXProject "WoW AI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EADA74772BD196C8005BDFD5;
+			packageReferences = (
+				EA0C5EB32BD4B362004DC1E7 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */,
+				EA0C5EB62BD4B375004DC1E7 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+				EA0C5EBB2BD4B3B0004DC1E7 /* XCRemoteSwiftPackageReference "SwiftOpenAI" */,
+				EA8046F62BDF00E100C4EDBE /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				EA033D922C08EE500042DBD1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = EADA74812BD196C8005BDFD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EADA747F2BD196C8005BDFD5 /* WoW AI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EADA747E2BD196C8005BDFD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EADA748B2BD196C8005BDFD5 /* Preview Assets.xcassets in Resources */,
+				EADA74882BD196C8005BDFD5 /* Assets.xcassets in Resources */,
+				EA8046FE2BDF55AD00C4EDBE /* loadingAnimation.json in Resources */,
+				EA8046FA2BDF018E00C4EDBE /* mainAnimation.json in Resources */,
+				EA033D912C08E93A0042DBD1 /* recordWaveform.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EADA747C2BD196C8005BDFD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0785522BE32D050025EC9C /* HistoryScreen.swift in Sources */,
+				EA0C5EBA2BD4B3A1004DC1E7 /* AIAssistant.swift in Sources */,
+				EADA74922BD196F8005BDFD5 /* Models.swift in Sources */,
+				EA8046FC2BDF01A900C4EDBE /* MainAnimation.swift in Sources */,
+				EA899AB62C06A2180067A6DE /* StorePhoneNumber.swift in Sources */,
+				EA82196A2BE43B420051B2FA /* Data.xcdatamodeld in Sources */,
+				EADA74962BD19AA8005BDFD5 /* GIFView.swift in Sources */,
+				EADA74862BD196C8005BDFD5 /* MainScreen.swift in Sources */,
+				EA899ABD2C06C6810067A6DE /* SettingsScreen.swift in Sources */,
+				EADA74942BD197B3005BDFD5 /* ViewModel.swift in Sources */,
+				EADA74842BD196C8005BDFD5 /* WoW_AIApp.swift in Sources */,
+				EA899AB42C06969C0067A6DE /* PhoneNumberScreen.swift in Sources */,
+				EA82196E2BE4523A0051B2FA /* VideoPopUp.swift in Sources */,
+				EA82196C2BE43C020051B2FA /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EADA748C2BD196C8005BDFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EADA748D2BD196C8005BDFD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EADA748F2BD196C8005BDFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WoW AI/Preview Content\"";
+				DEVELOPMENT_TEAM = LM38C83FL2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To record audio to be sent to openai";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wow.WoW-AI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EADA74902BD196C8005BDFD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WoW AI/Preview Content\"";
+				DEVELOPMENT_TEAM = LM38C83FL2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To record audio to be sent to openai";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wow.WoW-AI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EADA747B2BD196C8005BDFD5 /* Build configuration list for PBXProject "WoW AI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADA748C2BD196C8005BDFD5 /* Debug */,
+				EADA748D2BD196C8005BDFD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EADA748E2BD196C8005BDFD5 /* Build configuration list for PBXNativeTarget "WoW AI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADA748F2BD196C8005BDFD5 /* Debug */,
+				EADA74902BD196C8005BDFD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA033D922C08EE500042DBD1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		EA0C5EB32BD4B362004DC1E7 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAOpenAIClient";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		EA0C5EB62BD4B375004DC1E7 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.0;
+			};
+		};
+		EA0C5EBB2BD4B3B0004DC1E7 /* XCRemoteSwiftPackageReference "SwiftOpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jamesrochabrun/SwiftOpenAI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		EA8046F62BDF00E100C4EDBE /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA033D932C08EE500042DBD1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA033D922C08EE500042DBD1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EA0C5EB42BD4B362004DC1E7 /* XCAOpenAIClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA0C5EB32BD4B362004DC1E7 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */;
+			productName = XCAOpenAIClient;
+		};
+		EA0C5EB72BD4B375004DC1E7 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA0C5EB62BD4B375004DC1E7 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+		EA0C5EBC2BD4B3B0004DC1E7 /* SwiftOpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA0C5EBB2BD4B3B0004DC1E7 /* XCRemoteSwiftPackageReference "SwiftOpenAI" */;
+			productName = SwiftOpenAI;
+		};
+		EA8046F72BDF00E100C4EDBE /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA8046F62BDF00E100C4EDBE /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		EAA0B31B2C1A7D6600F602E9 /* SwiftOpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA0C5EBB2BD4B3B0004DC1E7 /* XCRemoteSwiftPackageReference "SwiftOpenAI" */;
+			productName = SwiftOpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		EA8219682BE43B420051B2FA /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA8219692BE43B420051B2FA /* Data.xcdatamodel */,
+			);
+			currentVersion = EA8219692BE43B420051B2FA /* Data.xcdatamodel */;
+			path = Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EADA74782BD196C8005BDFD5 /* Project object */;
+}
