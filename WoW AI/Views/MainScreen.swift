@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import YouTubePlayerKit
 import CoreData
 
 struct MainScreen: View {
@@ -15,7 +14,7 @@ struct MainScreen: View {
     
     @StateObject private var vm: ViewModel = ViewModel(context: ManagedObjectContextContainer.shared.context)
     @State var isBouncing = false
-    @State var youtubeURL: YouTubePlayer?
+    @State var videoUrl: String?
     @State var isLottiePlaying = true
     @State var isHistoryScreenPresented = false
     @State var isSettingsScreenPresented = false
@@ -119,7 +118,7 @@ struct MainScreen: View {
                 }
                 .blur(radius: blurRadius)
                 if isVideoPoppedUp {
-                    VideoPopUp(url: vm.videoUrl, isVideoPoppedUp: $isVideoPoppedUp, blurRadius: $blurRadius)
+                    VideoPopUp(isVideoPoppedUp: $isVideoPoppedUp, blurRadius: $blurRadius, videoUrl: vm.videoUrl!)
                 }
             }
         }
@@ -178,29 +177,9 @@ struct MainScreen: View {
     
     var urlRecievedScreen: some View {
         return VStack {
-            if let youtubeURL = youtubeURL {
-                YouTubePlayerView(youtubeURL) { state in
-                    switch state {
-                    case .idle:
-                        ProgressView()
-                    case .ready:
-                        EmptyView()
-                            .onAppear(perform: {
-                                youtubeURL.play()
-                            })
-                    case .error(let error):
-                        Text(verbatim: "Youtube player not loaded --> \(error)")
-                            .foregroundStyle(.red)
-                            .font(.caption)
-                    }
-                }
+            PlayerViewController(videoURL: URL(string: videoUrl!))
                 .padding()
                 .frame(height: 250)
-            } else {
-                Text("No video URL Recieved")
-                    .foregroundStyle(.red)
-                    .font(.title)
-            }
         }
     }
 }

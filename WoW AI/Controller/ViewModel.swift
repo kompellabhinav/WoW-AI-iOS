@@ -9,7 +9,6 @@ import AVFoundation
 import Foundation
 import Observation
 import XCAOpenAIClient
-import YouTubePlayerKit
 import CoreData
 
 @Observable

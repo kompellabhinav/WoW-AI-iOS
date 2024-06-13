@@ -11,9 +11,9 @@
 		EA033D942C08EE500042DBD1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EA033D932C08EE500042DBD1 /* Alamofire */; };
 		EA0785522BE32D050025EC9C /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0785512BE32D050025EC9C /* HistoryScreen.swift */; };
 		EA0C5EB52BD4B362004DC1E7 /* XCAOpenAIClient in Frameworks */ = {isa = PBXBuildFile; productRef = EA0C5EB42BD4B362004DC1E7 /* XCAOpenAIClient */; };
-		EA0C5EB82BD4B375004DC1E7 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA0C5EB72BD4B375004DC1E7 /* YouTubePlayerKit */; };
 		EA0C5EBA2BD4B3A1004DC1E7 /* AIAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C5EB92BD4B3A1004DC1E7 /* AIAssistant.swift */; };
 		EA0C5EBD2BD4B3B0004DC1E7 /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = EA0C5EBC2BD4B3B0004DC1E7 /* SwiftOpenAI */; };
+		EA304D0C2C1AA17E00CF15A2 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA304D0B2C1AA17E00CF15A2 /* VideoPlayer.swift */; };
 		EA8046F82BDF00E100C4EDBE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EA8046F72BDF00E100C4EDBE /* Lottie */; };
 		EA8046FA2BDF018E00C4EDBE /* mainAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8046F92BDF018E00C4EDBE /* mainAnimation.json */; };
 		EA8046FC2BDF01A900C4EDBE /* MainAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8046FB2BDF01A900C4EDBE /* MainAnimation.swift */; };
@@ -38,6 +38,7 @@
 		EA033D902C08E93A0042DBD1 /* recordWaveform.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recordWaveform.json; sourceTree = "<group>"; };
 		EA0785512BE32D050025EC9C /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 		EA0C5EB92BD4B3A1004DC1E7 /* AIAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistant.swift; sourceTree = "<group>"; };
+		EA304D0B2C1AA17E00CF15A2 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		EA8046F92BDF018E00C4EDBE /* mainAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mainAnimation.json; sourceTree = "<group>"; };
 		EA8046FB2BDF01A900C4EDBE /* MainAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAnimation.swift; sourceTree = "<group>"; };
 		EA8046FD2BDF55AD00C4EDBE /* loadingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadingAnimation.json; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA033D942C08EE500042DBD1 /* Alamofire in Frameworks */,
-				EA0C5EB82BD4B375004DC1E7 /* YouTubePlayerKit in Frameworks */,
 				EA0C5EBD2BD4B3B0004DC1E7 /* SwiftOpenAI in Frameworks */,
 				EA0C5EB52BD4B362004DC1E7 /* XCAOpenAIClient in Frameworks */,
 				EAA0B31C2C1A7D6600F602E9 /* SwiftOpenAI in Frameworks */,
@@ -84,6 +84,7 @@
 				EA0785512BE32D050025EC9C /* HistoryScreen.swift */,
 				EA899ABC2C06C6810067A6DE /* SettingsScreen.swift */,
 				EA899AB32C06969C0067A6DE /* PhoneNumberScreen.swift */,
+				EA304D0B2C1AA17E00CF15A2 /* VideoPlayer.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,7 +183,6 @@
 			name = "WoW AI";
 			packageProductDependencies = (
 				EA0C5EB42BD4B362004DC1E7 /* XCAOpenAIClient */,
-				EA0C5EB72BD4B375004DC1E7 /* YouTubePlayerKit */,
 				EA0C5EBC2BD4B3B0004DC1E7 /* SwiftOpenAI */,
 				EA8046F72BDF00E100C4EDBE /* Lottie */,
 				EA033D932C08EE500042DBD1 /* Alamofire */,
@@ -218,7 +218,6 @@
 			mainGroup = EADA74772BD196C8005BDFD5;
 			packageReferences = (
 				EA0C5EB32BD4B362004DC1E7 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */,
-				EA0C5EB62BD4B375004DC1E7 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
 				EA0C5EBB2BD4B3B0004DC1E7 /* XCRemoteSwiftPackageReference "SwiftOpenAI" */,
 				EA8046F62BDF00E100C4EDBE /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				EA033D922C08EE500042DBD1 /* XCRemoteSwiftPackageReference "Alamofire" */,
@@ -263,6 +262,7 @@
 				EA899ABD2C06C6810067A6DE /* SettingsScreen.swift in Sources */,
 				EADA74942BD197B3005BDFD5 /* ViewModel.swift in Sources */,
 				EADA74842BD196C8005BDFD5 /* WoW_AIApp.swift in Sources */,
+				EA304D0C2C1AA17E00CF15A2 /* VideoPlayer.swift in Sources */,
 				EA899AB42C06969C0067A6DE /* PhoneNumberScreen.swift in Sources */,
 				EA82196E2BE4523A0051B2FA /* VideoPopUp.swift in Sources */,
 				EA82196C2BE43C020051B2FA /* Persistence.swift in Sources */,
@@ -491,14 +491,6 @@
 				kind = branch;
 			};
 		};
-		EA0C5EB62BD4B375004DC1E7 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.8.0;
-			};
-		};
 		EA0C5EBB2BD4B3B0004DC1E7 /* XCRemoteSwiftPackageReference "SwiftOpenAI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jamesrochabrun/SwiftOpenAI";
@@ -527,11 +519,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EA0C5EB32BD4B362004DC1E7 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */;
 			productName = XCAOpenAIClient;
-		};
-		EA0C5EB72BD4B375004DC1E7 /* YouTubePlayerKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EA0C5EB62BD4B375004DC1E7 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
-			productName = YouTubePlayerKit;
 		};
 		EA0C5EBC2BD4B3B0004DC1E7 /* SwiftOpenAI */ = {
 			isa = XCSwiftPackageProductDependency;
