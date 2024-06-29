@@ -3,7 +3,7 @@ import SwiftOpenAI
 import Alamofire
 
 class AIAssistant : ObservableObject {
-    let assistantId = "asst_TGp5kACRbHZCyLaWJl5jPa54"
+    let assistantId = "asst_oRQaP4DJUSyY1srpPZM67STc"
     
     // Add your API key here or add it in the environment variable.
     let service : some OpenAIService = OpenAIServiceFactory.service(apiKey: ProcessInfo.processInfo.environment["openAI_api_key"]!)
