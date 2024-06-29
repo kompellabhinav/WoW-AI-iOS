@@ -27,8 +27,6 @@ class ViewModel: NSObject, AVAudioRecorderDelegate, AVAudioPlayerDelegate, Obser
     var processingSpeechTask: Task<Void, Never>?
     var videoUrl : String?
     
-    var aiAssist = AIAssistant()
-    
     var captureURL: URL {
         FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)
             .first!.appendingPathComponent("recoding.m4a")
@@ -124,20 +122,12 @@ class ViewModel: NSObject, AVAudioRecorderDelegate, AVAudioPlayerDelegate, Obser
                 print(prompt)
 
                 try Task.checkCancellation()
-        
-                await aiAssist.createMessage(message: prompt)
-                print("------------ Messge created ------------")
-                let responseText = aiAssist.messageResponse
                 
-                print(responseText!)
+                let responseText = try await sendPredictionRequest(question: prompt, sessionId: "1234")
                 
-                if responseText! == "null" {
-                    print("NULL recieved. Call button displayed")
-                    state = .nullRecieved
-                    return
-                }
+                print("--->>> RESPONSE: \(responseText)")
                 
-                if responseText![..<(responseText?.index(responseText!.startIndex, offsetBy: 8))!] == "https://" {
+                if responseText[..<(responseText.index(responseText.startIndex, offsetBy: 8))] == "https://" {
                     self.videoUrl = responseText
                     print("-------> URL: \(self.videoUrl ?? "url not parsed")")
                     saveQuestion(question: prompt, url: videoUrl!)
@@ -147,13 +137,10 @@ class ViewModel: NSObject, AVAudioRecorderDelegate, AVAudioPlayerDelegate, Obser
                 
                 // Converts text to speech
                 try Task.checkCancellation()
-                let data = try await client.generateSpeechFrom(input: responseText!)
+                let data = try await client.generateSpeechFrom(input: responseText)
                 
                 try Task.checkCancellation()
                 try self.playAudio(data: data)
-                
-                
-                
             } catch {
                 if Task.isCancelled { return }
                 state = .error(error)
@@ -238,11 +225,6 @@ class ViewModel: NSObject, AVAudioRecorderDelegate, AVAudioPlayerDelegate, Obser
         print("Call pressed")
     }
     
-    func restartAssistant() {
-        self.aiAssist = AIAssistant()
-        state = .idle
-    }
-    
     func startupAudio() async {
         let welcomeAudio = "Hello! I am the RHL AI assistant, Please use the mic button below to let me know your concern"
         do {
@@ -254,5 +236,30 @@ class ViewModel: NSObject, AVAudioRecorderDelegate, AVAudioPlayerDelegate, Obser
             state = .error(error)
             resetValues()
         }
+    }
+    
+    func sendPredictionRequest(question: String, sessionId: String) async throws -> String {
+        guard let url = URL(string: "http://20.121.170.167:3000/api/v1/prediction/6477d0bc-986d-42fb-8cbe-2d0598ddaabb") else {
+            throw URLError(.badURL)
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("Basic cmhsYWk6MTIzNDU2", forHTTPHeaderField: "Authorization")
+        
+        let json: [String: Any] = [
+            "question": question,
+            "overrideConfig": [
+                "sessionId": sessionId
+            ]
+        ]
+        
+        let jsonData = try JSONSerialization.data(withJSONObject: json, options: [])
+        request.httpBody = jsonData
+        
+        let (data, _) = try await URLSession.shared.data(for: request)
+        let predictionResponse = try JSONDecoder().decode(FlowiseReponse.self, from: data)
+        return predictionResponse.text
     }
 }

@@ -169,7 +169,6 @@ struct MainScreen: View {
     
     var retryButton: some View {
         return Button(action: {
-            vm.restartAssistant()
         }, label: {
             Image(systemName: "arrow.triangle.2.circlepath")
         })
